@@ -7,3 +7,15 @@ platformdirs==4.2.2
 pylint==3.2.6
 pyright==1.1.374
 tomlkit==0.13.0
+astroid==3.2.4
+dill==0.3.8
+isort==5.13.2
+mccabe==0.7.0
+mypy==1.11.1
+mypy-extensions==1.0.0
+nodeenv==1.9.1
+platformdirs==4.2.2
+pylint==3.2.6
+pyright==1.1.374
+tomlkit==0.13.0
+typing_extensions==4.12.2
