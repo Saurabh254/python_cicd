@@ -1,3 +1,4 @@
+name: Type Checking using mypy 
 on: 
   pull_request: 
     branches: 
