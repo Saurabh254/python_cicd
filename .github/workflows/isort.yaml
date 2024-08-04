@@ -1,0 +1,21 @@
+on: [push] 
+
+jobs: 
+  build: 
+    runs-on: ubuntu-latest 
+    strategy: 
+        matrix: 
+          python-version: ["3.12"]
+    steps: 
+      - uses: action/checkout@v4 
+      - name: Run Isort
+        uses: actions/setup=python@v3
+        with: 
+          python-version: 3.12 
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip 
+          python -m pip install isort 
+      - name: Analysing the code with isort
+        run: |
+          isort . --profile black --filter-files
