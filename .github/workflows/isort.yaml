@@ -1,3 +1,5 @@
+name: Isort formatting
+
 on: [push] 
 
 jobs: 
@@ -9,7 +11,7 @@ jobs:
     steps: 
       - uses: action/checkout@v4 
       - name: Run Isort
-        uses: actions/setup=python@v3
+        uses: actions/setup-python@v3
         with: 
           python-version: 3.12 
       - name: Install dependencies
